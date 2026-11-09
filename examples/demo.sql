@@ -1,0 +1,17 @@
+CREATE DATABASE demo;
+CREATE TABLE users (id INTEGER PRIMARY KEY, name VARCHAR(100) NOT NULL, age INTEGER, score DOUBLE);
+CREATE TABLE departments (id INTEGER PRIMARY KEY, label VARCHAR(40));
+INSERT INTO departments VALUES (1, 'Engineering'), (2, 'Operations');
+BEGIN;
+INSERT INTO users VALUES (1, 'Alice', 20, 95.5), (2, 'Bob', 22, 88.0), (3, 'Cara', NULL, NULL);
+COMMIT;
+CREATE INDEX idx_users_age ON users(age);
+SELECT name, age FROM users WHERE age >= 18 ORDER BY score DESC LIMIT 10;
+SELECT age, COUNT(*) AS n, AVG(score) FROM users GROUP BY age ORDER BY age;
+SELECT u.name, d.label FROM users u INNER JOIN departments d ON u.id = d.id ORDER BY u.id;
+BEGIN;
+UPDATE users SET age = 30 WHERE id = 2;
+ROLLBACK;
+EXPLAIN SELECT * FROM users WHERE id = 2;
+SELECT * FROM users ORDER BY id;
+CHECKPOINT;

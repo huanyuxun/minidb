@@ -1,0 +1,23 @@
+Test project D:/Codex/Projects/Chats/2026-11-09/minidb-relational-database-management-system-key/outputs/minidb/build-msvc
+    Start 1: storage
+1/9 Test #1: storage ..........................   Passed    0.40 sec
+    Start 2: structures
+2/9 Test #2: structures .......................   Passed    1.51 sec
+    Start 3: sql
+3/9 Test #3: sql ..............................   Passed    0.19 sec
+    Start 4: query
+4/9 Test #4: query ............................   Passed    0.20 sec
+    Start 5: integration
+5/9 Test #5: integration ......................   Passed    0.34 sec
+    Start 6: concurrency
+6/9 Test #6: concurrency ......................   Passed    1.85 sec
+    Start 7: recovery
+7/9 Test #7: recovery .........................   Passed    1.46 sec
+    Start 8: regression
+8/9 Test #8: regression .......................   Passed    0.36 sec
+    Start 9: cli
+9/9 Test #9: cli ..............................   Passed    0.39 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   7.21 sec

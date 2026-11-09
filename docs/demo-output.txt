@@ -1,0 +1,53 @@
+CREATE DATABASE
+CREATE TABLE
+CREATE TABLE
+INSERT
+BEGIN
+INSERT
+COMMIT
+CREATE INDEX
++-------+-----+
+| name  | age |
++-------+-----+
+| Alice | 20  |
+| Bob   | 22  |
++-------+-----+
+2 row(s)
+Plan: Projection(Limit(Sort(Filter(IndexScan(users, idx_users_age)))))
++------+---+------------+
+| age  | n | AVG(score) |
++------+---+------------+
+| NULL | 1 | NULL       |
+| 20   | 1 | 95.5       |
+| 22   | 1 | 88         |
++------+---+------------+
+3 row(s)
+Plan: Projection(Sort(Aggregation(SeqScan(users))))
++--------+-------------+
+| u.name | d.label     |
++--------+-------------+
+| Alice  | Engineering |
+| Bob    | Operations  |
++--------+-------------+
+2 row(s)
+Plan: Projection(Sort(NestedLoopJoin(SeqScan(users), SeqScan(departments))))
+BEGIN
+UPDATE
+ROLLBACK
++--------------------------------------------------+
+| plan                                             |
++--------------------------------------------------+
+| Projection(Filter(IndexScan(users, __pk_users))) |
++--------------------------------------------------+
+1 row(s)
+Plan: Projection(Filter(IndexScan(users, __pk_users)))
++----+-------+------+-------+
+| id | name  | age  | score |
++----+-------+------+-------+
+| 1  | Alice | 20   | 95.5  |
+| 2  | Bob   | 22   | 88    |
+| 3  | Cara  | NULL | NULL  |
++----+-------+------+-------+
+3 row(s)
+Plan: Projection(Sort(SeqScan(users)))
+CHECKPOINT
