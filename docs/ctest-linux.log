@@ -1,0 +1,81 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /tmp/minidb-delivery-20261110/build-release
+[  3%] Building CXX object CMakeFiles/minidb.dir/src/platform.cpp.o
+[  6%] Building CXX object CMakeFiles/minidb.dir/src/storage.cpp.o
+[  9%] Building CXX object CMakeFiles/minidb.dir/src/heap.cpp.o
+[ 12%] Building CXX object CMakeFiles/minidb.dir/src/btree.cpp.o
+[ 15%] Building CXX object CMakeFiles/minidb.dir/src/sql.cpp.o
+[ 18%] Building CXX object CMakeFiles/minidb.dir/src/lock.cpp.o
+[ 21%] Building CXX object CMakeFiles/minidb.dir/src/executor.cpp.o
+[ 24%] Building CXX object CMakeFiles/minidb.dir/src/catalog.cpp.o
+[ 27%] Building CXX object CMakeFiles/minidb.dir/src/query.cpp.o
+[ 30%] Building CXX object CMakeFiles/minidb.dir/src/database.cpp.o
+[ 33%] Linking CXX static library libminidb.a
+[ 33%] Built target minidb
+[ 36%] Building CXX object CMakeFiles/minidb_bench.dir/bench/benchmark.cpp.o
+[ 39%] Building CXX object CMakeFiles/minidb_cli.dir/src/cli.cpp.o
+[ 42%] Linking CXX executable minidb_cli
+[ 42%] Built target minidb_cli
+[ 45%] Building CXX object CMakeFiles/minidb_api_example.dir/examples/api.cpp.o
+[ 48%] Linking CXX executable minidb_bench
+[ 48%] Built target minidb_bench
+[ 51%] Building CXX object CMakeFiles/storage_test.dir/tests/storage_test.cpp.o
+[ 54%] Linking CXX executable storage_test
+[ 57%] Linking CXX executable minidb_api_example
+[ 57%] Built target storage_test
+[ 57%] Built target minidb_api_example
+[ 60%] Building CXX object CMakeFiles/structures_test.dir/tests/structures_test.cpp.o
+[ 63%] Building CXX object CMakeFiles/sql_test.dir/tests/sql_test.cpp.o
+[ 66%] Linking CXX executable structures_test
+[ 69%] Linking CXX executable sql_test
+[ 69%] Built target structures_test
+[ 72%] Building CXX object CMakeFiles/query_test.dir/tests/query_test.cpp.o
+[ 72%] Built target sql_test
+[ 75%] Building CXX object CMakeFiles/integration_test.dir/tests/integration_test.cpp.o
+[ 78%] Linking CXX executable query_test
+[ 78%] Built target query_test
+[ 81%] Building CXX object CMakeFiles/concurrency_test.dir/tests/concurrency_test.cpp.o
+[ 84%] Linking CXX executable integration_test
+[ 84%] Built target integration_test
+[ 87%] Building CXX object CMakeFiles/recovery_test.dir/tests/recovery_test.cpp.o
+[ 90%] Linking CXX executable recovery_test
+[ 90%] Built target recovery_test
+[ 93%] Building CXX object CMakeFiles/regression_test.dir/tests/regression_test.cpp.o
+[ 96%] Linking CXX executable concurrency_test
+[ 96%] Built target concurrency_test
+[100%] Linking CXX executable regression_test
+[100%] Built target regression_test
+Internal ctest changing into directory: /tmp/minidb-delivery-20261110/build-release
+Test project /tmp/minidb-delivery-20261110/build-release
+    Start 1: storage
+1/9 Test #1: storage ..........................   Passed    0.11 sec
+    Start 2: structures
+2/9 Test #2: structures .......................   Passed    1.07 sec
+    Start 3: sql
+3/9 Test #3: sql ..............................   Passed    0.01 sec
+    Start 4: query
+4/9 Test #4: query ............................   Passed    0.03 sec
+    Start 5: integration
+5/9 Test #5: integration ......................   Passed    0.06 sec
+    Start 6: concurrency
+6/9 Test #6: concurrency ......................   Passed    0.96 sec
+    Start 7: recovery
+7/9 Test #7: recovery .........................   Passed    0.22 sec
+    Start 8: regression
+8/9 Test #8: regression .......................   Passed    0.11 sec
+    Start 9: cli
+9/9 Test #9: cli ..............................   Passed    0.05 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =   2.61 sec

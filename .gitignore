@@ -1,0 +1,7 @@
+/build*/
+/bin/
+*.db
+*.db.wal
+*.db.lock
+*.csv
+!docs/*.csv
